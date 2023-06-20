@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE personas SYSTEM "./xml.dtd">
+
+
+<!--
+    "+"-> significa que el elemento aparece una vez o mas veces
+    "?"-> Puede o no puede aparecer
+    NADA->Aparece una vez
+    "*"-> posibilidad de 0 o muchas veces 
+     "|"-> es EXCLUYENTE ya que da la opción de que solo aparezca
+     o un elemento u otro.
+--> 
+   
+
+<personas>
+    <datospersonales>
+        <nombre sexo="hombre">Pedro</nombre>
+        <apellidos>Rodriguez</apellidos>
+        <direccion>Calle ancha</direccion>
+        
+    </datospersonales>
+
+    <datospersonales>
+        <nombre sexo="mujer">Maria</nombre>
+        <apellidos>Sanchez</apellidos>
+        <direccion>Calle atras</direccion>
+        <telefono>123325567<telefono>
+        <telefono>123345567<telefono>
+    </datospersonales>
+
+    <datospersonales>
+        <nombre>Lucia</nombre>
+        <apellidos>Bueno</apellidos>
+        <direccion>Calle Sur</direccion>
+        <telefono>623345567<telefono>
+    </datospersonales>
+<personas>
+    

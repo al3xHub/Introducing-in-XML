@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE libros SYSTEM "./ejercicio4T4.dtd" >
+
+<libros>
+    <libro>
+        <titulo>El Quijote</titulo>
+        <autores>
+            <autor>Miguel de Cervantes</autor>
+        </autores>
+        <editorial>Anaya</editorial>
+        <descripcion>Burla de las novelas de caballeria</descripcion>
+    </libro>
+
+    <libro>
+    <titulo>Buenos Presagios</titulo>
+        <autores>
+            <autor>Neil Gaiman</autor>
+            <autor>Tery Pratchett</autor>
+        </autores>
+        <editorial>McGraw Hill</editorial>
+        <descripcion>Comedia de tono irónico sobre el anticristo</descripcion>
+        <copy>&copyright;&ciudad;</copy>
+    </libro>
+
+</libros>

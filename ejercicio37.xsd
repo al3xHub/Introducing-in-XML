@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="personas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="persona" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="limite80"/>
+                            <xs:element name="apellidos" type="limite80"/>
+                            <xs:element name="telefono" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+            </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        
+    </xs:element>
+
+    <xs:simpleType name="limite80">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="80"></xs:maxLength>
+
+        </xs:restriction>
+
+    </xs:simpleType>
+</xs:schema>

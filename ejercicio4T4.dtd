@@ -1,0 +1,11 @@
+<!ELEMENT libros (libro+)>
+<!ELEMENT libro (titulo, autores, editorial, descripcion, copy*)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autores (autor+)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT copy (#PCDATA)>
+
+<!ENTITY copyright SYSTEM "Alejandro 2023">
+<!ENTITY ciudad SYSTEM "Sevilla">

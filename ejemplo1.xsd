@@ -1,0 +1,61 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="<a href="http://www.w3.org/2001/XMLSchema%22>" rel="nofollow"><u>http://www.w3.org/2001/XMLSchema"></u></a>
+    <xs:element name="personas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="persona">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" minOccurs="0" maxOccurs="1" />
+                            <xs:element name="apellidos">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="5" />
+                                        <xs:maxLength value="15" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="fecha_nacimiento">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dia" type="xs:integer"/>
+                                        <xs:element name="mes">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="1" />
+                                                    <xs:maxInclusive value="12" />
+                                                    <xs:totalDigits value="2" />
+                                                    <xs:fractionDigits value="0" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="año" type="xs:integer"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="diaSemana">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Lunes" />
+                                        <xs:enumeration value="Martes" />
+                                        <xs:enumeration value="Miércoles" />
+                                        <xs:enumeration value="Jueves" />
+                                        <xs:enumeration value="Viernes" />
+                                        <xs:enumeration value="Sábado" />
+                                        <xs:enumeration value="Domingo" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="dni">
+                                <xs:complexType>
+                                    <xs:attribute name="nacionalidad" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

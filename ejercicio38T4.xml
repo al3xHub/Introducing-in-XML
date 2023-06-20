@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./ejercicio37.xsd">
+    <persona dni="76545876C">
+         <nombre>Juan</nombre>
+        <apellidos>García</apellidos>
+        <telefono>924555555</telefono>
+    </persona>
+    <persona dni="75432345R">
+        <nombre>Luisa</nombre>
+        <apellidos>Pérez</apellidos>
+        <telefono>954521235</telefono>
+    </persona>
+</personas>
